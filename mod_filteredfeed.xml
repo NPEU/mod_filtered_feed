@@ -28,36 +28,61 @@
     </files>
 
     <config>
-        <fields name="params">
-            <fieldset name="basic">
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="url"
+					type="text"
+					label="MOD_FILTEREDFEED_URL_LABEL"
+					description="MOD_FILTEREDFEED_URL_DESC"
+					default=""
+					required="true"
+				/>
+				<field
+					name="include"
+					type="textarea"
+					label="MOD_FILTEREDFEED_INCLUDE_LABEL"
+					description="MOD_FILTEREDFEED_INCLUDE_DESC"
+					default=""
+					required="true"
+				/>
+				<field
+					name="exclude"
+					type="textarea"
+					label="MOD_FILTEREDFEED_EXCLUDE_LABEL"
+					description="MOD_FILTEREDFEED_EXCLUDE_DESC"
+					default=""
+				/>
                 <field
-                    name="thing"
-                    type="text"
-                    label="MOD_FILTEREDFEED_THING_LABEL"
-                    description="MOD_FILTEREDFEED_THING_DESC"
-                    default=""
-                    required="true"
-                />
-            </fieldset>
+					name="limit"
+					type="text"
+					label="MOD_FILTEREDFEED_LIMIT_LABEL"
+					description="MOD_FILTEREDFEED_LIMIT_LABEL_DESC"
+					default=""
+				/>
+                <field
+					name="show_description"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_FILTEREDFEED_DISPLAY_DESCRIPTION_LABEL"
+					description="MOD_FILTEREDFEED_DISPLAY_DESCRIPTION_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+			</fieldset>
             <fieldset name="advanced">
-                <field
-                    name="adv_thing"
-                    type="text"
-                    label="MOD_FILTEREDFEED_ADV_THING_LABEL"
-                    description="MOD_FILTEREDFEED_ADV_THING_DESC"
-                    default=""
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
                 />
-            </fieldset>
-            <fieldset name="custom_fieldset">
-                <field
-                    name="c1_thing"
-                    type="text"
-                    label="MOD_FILTEREDFEED_CUSTOM_THING_LABEL"
-                    description="MOD_FILTEREDFEED_CUSTOM_THING_DESC"
-                    default=""
-                />
-            </fieldset>
-        </fields>
-    </config>
+
+			</fieldset>
+		</fields>
+	</config>
 
 </extension>
