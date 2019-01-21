@@ -10,7 +10,7 @@
     <license>MIT License; see LICENSE.md</license>
 
     <!--  The version string is recorded in the components table -->
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <!-- The description is optional and defaults to the name -->
     <description>MOD_FILTEREDFEED_XML_DESCRIPTION</description>
 
@@ -28,61 +28,61 @@
     </files>
 
     <config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field
-					name="url"
-					type="text"
-					label="MOD_FILTEREDFEED_URL_LABEL"
-					description="MOD_FILTEREDFEED_URL_DESC"
-					default=""
-					required="true"
-				/>
-				<field
-					name="include"
-					type="textarea"
-					label="MOD_FILTEREDFEED_INCLUDE_LABEL"
-					description="MOD_FILTEREDFEED_INCLUDE_DESC"
-					default=""
-					required="true"
-				/>
-				<field
-					name="exclude"
-					type="textarea"
-					label="MOD_FILTEREDFEED_EXCLUDE_LABEL"
-					description="MOD_FILTEREDFEED_EXCLUDE_DESC"
-					default=""
-				/>
+        <fields name="params">
+            <fieldset name="basic">
                 <field
-					name="limit"
-					type="text"
-					label="MOD_FILTEREDFEED_LIMIT_LABEL"
-					description="MOD_FILTEREDFEED_LIMIT_LABEL_DESC"
-					default=""
-				/>
+                    name="url"
+                    type="text"
+                    label="MOD_FILTEREDFEED_URL_LABEL"
+                    description="MOD_FILTEREDFEED_URL_DESC"
+                    default=""
+                    required="true"
+                />
                 <field
-					name="show_description"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="MOD_FILTEREDFEED_DISPLAY_DESCRIPTION_LABEL"
-					description="MOD_FILTEREDFEED_DISPLAY_DESCRIPTION_DESC">
-					<option
-						value="1">JYES</option>
-					<option
-						value="0">JNO</option>
-				</field>
-			</fieldset>
+                    name="include"
+                    type="textarea"
+                    label="MOD_FILTEREDFEED_INCLUDE_LABEL"
+                    description="MOD_FILTEREDFEED_INCLUDE_DESC"
+                    default=""
+                    required="true"
+                />
+                <field
+                    name="exclude"
+                    type="textarea"
+                    label="MOD_FILTEREDFEED_EXCLUDE_LABEL"
+                    description="MOD_FILTEREDFEED_EXCLUDE_DESC"
+                    default=""
+                />
+                <field
+                    name="limit"
+                    type="text"
+                    label="MOD_FILTEREDFEED_LIMIT_LABEL"
+                    description="MOD_FILTEREDFEED_LIMIT_LABEL_DESC"
+                    default=""
+                />
+                <field
+                    name="show_description"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    label="MOD_FILTEREDFEED_DISPLAY_DESCRIPTION_LABEL"
+                    description="MOD_FILTEREDFEED_DISPLAY_DESCRIPTION_DESC">
+                    <option
+                        value="1">JYES</option>
+                    <option
+                        value="0">JNO</option>
+                </field>
+            </fieldset>
             <fieldset name="advanced">
-				<field
-					name="moduleclass_sfx"
-					type="textarea" rows="3"
-					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                <field
+                    name="moduleclass_sfx"
+                    type="textarea" rows="3"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
                 />
 
-			</fieldset>
-		</fields>
-	</config>
+            </fieldset>
+        </fields>
+    </config>
 
 </extension>

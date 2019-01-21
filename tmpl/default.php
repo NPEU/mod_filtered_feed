@@ -16,7 +16,7 @@ $doc = JFactory::getDocument();
 <?php if (count($feed) > 0): ?>
 <section>
     <h2<?php if (!$params->get('show_title')): echo ' style="display: none;"'; endif; ?>><?php echo $params->get('title'); ?></h2>
-    
+
     <?php foreach ($feed as $item): ?>
     <article>
         <?php if (!empty($item['thumb'])): ?>

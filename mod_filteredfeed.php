@@ -14,5 +14,5 @@ JLoader::register('ModFilteredfeedHelper', __DIR__ . '/helper.php');
 
 $feed = modFilteredFeedHelper::getFeed($params);
 if ($feed) {
-	require(JModuleHelper::getLayoutPath('mod_filteredfeed'));
+    require(JModuleHelper::getLayoutPath('mod_filteredfeed'));
 }
