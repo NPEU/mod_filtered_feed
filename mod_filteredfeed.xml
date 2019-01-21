@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="3.2.0" method="upgrade">
+
+    <name>MOD_FILTEREDFEED</name>
+    <author>Andy Kirk</author>
+    <authorEmail>andy.kirk@npeu.ox.ac.uk</authorEmail>
+    <authorUrl>https://www.npeu.ox.ac.uk</authorUrl>
+    <creationDate>January 2019</creationDate>
+    <copyright>(C) NPEU 2019</copyright>
+    <license>MIT License; see LICENSE.md</license>
+
+    <!--  The version string is recorded in the components table -->
+    <version>1.0.0</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>MOD_FILTEREDFEED_XML_DESCRIPTION</description>
+
+    <updateservers>
+        <!-- Note: No spaces or linebreaks allowed between the server tags -->
+        <server type="extension" name="NPEU: mod_filteredfeed Update Site">https://raw.githubusercontent.com/NPEU/mod_filteredfeed/master/update-manifest.xml</server>
+    </updateservers>
+
+    <files>
+        <filename module="mod_filteredfeed">mod_filteredfeed.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="thing"
+                    type="text"
+                    label="MOD_FILTEREDFEED_THING_LABEL"
+                    description="MOD_FILTEREDFEED_THING_DESC"
+                    default=""
+                    required="true"
+                />
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="adv_thing"
+                    type="text"
+                    label="MOD_FILTEREDFEED_ADV_THING_LABEL"
+                    description="MOD_FILTEREDFEED_ADV_THING_DESC"
+                    default=""
+                />
+            </fieldset>
+            <fieldset name="custom_fieldset">
+                <field
+                    name="c1_thing"
+                    type="text"
+                    label="MOD_FILTEREDFEED_CUSTOM_THING_LABEL"
+                    description="MOD_FILTEREDFEED_CUSTOM_THING_DESC"
+                    default=""
+                />
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>
