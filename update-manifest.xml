@@ -32,4 +32,20 @@
             <tag>stable</tag>
         </tags>
     </update>
+    <update>
+        <name>NPEU: mod_filteredfeed</name>
+        <description>Joomla! mod_filteredfeed module</description>
+        <element>mod_filteredfeed</element>
+        <type>module</type>
+        <version>1.0.2</version>
+        <client>site</client>
+        <infourl title="NPEU: mod_filteredfeed">https://github.com/NPEU/mod_filteredfeed/releases/tag/v1.0.2</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/NPEU/mod_filteredfeed/archive/v1.0.2.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" />
+        <tags>
+            <tag>stable</tag>
+        </tags>
+    </update>
 </updates>
